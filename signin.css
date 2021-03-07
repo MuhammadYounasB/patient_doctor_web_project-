@@ -1,0 +1,129 @@
+body{
+
+margin:0;
+padding:0;
+box-sizing: border-box;
+
+
+}
+.photo{
+
+width:25px;
+height: 25px;
+
+}
+section{
+
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: linear-gradient(-30deg,#03a9f4 0%, #3a78b7
+50%, #262626 50%, #607d8b 100%);
+animation:animate 10s linear infinite;
+}
+@keyframes animate{
+
+0%{
+    filter:hue-rotate(0deg);
+}
+100%{
+    filter:hue-rotate(360deg);
+}
+
+}
+.box{
+position:relative;
+padding:50px;
+width:360px;
+height:280px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgba(255,255,255,0.1);
+border-radius: 6px;
+box-shadow: 0 5px 35px rgba(0,0,0,0.2);
+
+}
+
+.box .form{
+
+position: relative;
+width: 100%;
+
+}
+.box.form.h2{
+
+color:#fff;
+font-weight: 600;
+letter-spacing: 2px;
+margin-bottom: 30px;
+
+
+}
+.box .form .inputbx{
+
+
+position:relative;
+width:100%;
+margin-bottom:20px;
+
+}
+.box .form .inputbx input{
+
+width:100%;
+outline:none;
+border:1px splid rgba(255,255,255,0.2);
+background:transparent;
+padding:8px 10px;
+padding-left:35px;
+border-radius:6px;
+color:#fff;
+font-size:16px;
+font-weight:300px;
+
+}
+.box .form .inputbx img{
+
+position:absolute;
+top:8px;
+left:10px;
+transform:scale(0.7);
+filter:invert(1);
+
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(75, 73, 73, 0.685);
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
